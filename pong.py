@@ -7,7 +7,6 @@ pygame.init()
 WIDTH = 800
 HEIGHT = 600
 
-
 running = True
 paused = True
 
