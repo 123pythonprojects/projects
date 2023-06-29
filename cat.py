@@ -1,5 +1,5 @@
-'''
-A car class!
+'''fl
+A cat class!
 '''
 class Cat:
     def __init__(self, name):
@@ -32,5 +32,5 @@ print("")
 if david.will_purr:
     print(david.name + " the cat purred. David is very happy, " + name + ". \n")
 else:
-    print(david.name + " the cat said " + david.meow + ". He does not like you, " + name + ".\n")
+    print(david.name + " the cat said " + david.meow + ". He likes you, " + name + ".\n")
 
