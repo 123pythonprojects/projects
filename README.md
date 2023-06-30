@@ -14,4 +14,4 @@ Lists of projects/ideas to build coding experience in no particular order
 4. https://github.com/practical-tutorials/project-based-learning
 
 5. https://125summer.tech/
-6. 
+   
