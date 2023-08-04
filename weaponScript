@@ -1,0 +1,32 @@
+
+local Tool = script.Parent
+local Sword = Tool.Handle
+local equipped = false
+
+function tagHumanoid(humanoid, player)
+	if humanoid then 
+		local creatorTag = Instance.new("ObjectValue")
+		creatorTag.Value = player
+		creatorTag.Name = "creator"
+		creatorTag.Parent = humanoid
+		debris:AddItem(creatorTag, 1)
+	end
+end
+
+function untagHumanoid(humanoid)
+	if humanoid ~= nil then
+		local tag = humanoid:findFirstChild("creator")
+		if tag ~= nil then
+			tag.Parent = nil
+		end
+	end
+end
+
+Tool.Enabled = true
+
+script.Parent.Activated:connect(onActivated)
+script.Parent.Equipped:connect(onEquipped)
+
+sword = script.Parent.Handle
+
+connection = sword.Touched:connect(blow)
