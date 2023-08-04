@@ -1,0 +1,8 @@
+game.Players.PlayerAdded:connect(function(plr)
+    local stats = Instance.new("BoolValue",plr)
+ stats.Name = "leaderstats"
+ 
+  local kill = Instance.new("IntValue",stats)
+ kill.Name = "Kills"
+ kill.Value = 0 
+end)
